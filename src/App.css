@@ -1,0 +1,70 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Ensure there is no border visible between the navbars and content */
+.MuiDrawer-paper {
+  border-right: none;
+}
+
+.content {
+  margin-top: 80px; /* Ensure no overlap with the horizontal navbar */
+}
+
+/* Ensure no padding issues with Box layout */
+.MuiBox-root {
+  padding-top: 0px; /* Remove extra padding */
+}
+/* App.css */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.overview-container {
+  padding: 20px;
+}
+
+.overview-title {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.chart-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.chart-container {
+  flex: 1 1 45%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .chart-container {
+    flex: 1 1 100%; /* Full width on smaller screens */
+  }
+
+  .overview-title {
+    font-size: 28px;
+  }
+}
+
+

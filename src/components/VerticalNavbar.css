@@ -1,0 +1,48 @@
+/* src/components/VerticalNavbar.css */
+.vertical-navbar {
+    width: 220px;
+    background-color: #333; /* Dark background */
+    height: 100vh; /* Full height of the page */
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    z-index: 500;
+    padding-top: 70px; /* Adjust for the horizontal navbar height */
+}
+
+.vertical-navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.vertical-navbar li {
+    padding: 15px 25px;
+    border-bottom: 1px solid #444;
+}
+
+.vertical-navbar li a {
+    color: #bbb;
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.vertical-navbar li a:hover {
+    background-color: #444;
+    color: #fff;
+    padding-left: 30px; /* Sliding effect */
+}
+
+.vertical-navbar li a.active {
+    background-color: #0069d9;
+    color: white;
+}
+
+.vertical-navbar li i {
+    margin-right: 15px;
+    font-size: 20px; /* Icon size */
+}
